@@ -48,8 +48,8 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     if (result != SQLITE_OK) {
         NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
         *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
-                                                                                       NSLocalizedDescriptionKey: errorDesc
-                                                                                       }];
+            NSLocalizedDescriptionKey: errorDesc
+        }];
         return NO;
     }
     
@@ -76,8 +76,8 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     if (result != SQLITE_OK) {
         NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
         *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
-                                                                                       NSLocalizedDescriptionKey: errorDesc
-                                                                                       }];
+            NSLocalizedDescriptionKey: errorDesc
+        }];
         return NO;
     }
     

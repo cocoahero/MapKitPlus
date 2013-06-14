@@ -20,6 +20,7 @@
 @implementation MBKOnlineTileOverlay_Tests
 
 - (void)setUp {
+    [super setUp];
     self.overlay = [[MBKOnlineTileOverlay alloc] initWithMapIdentifier:@"account.identifier"];
     self.overlayPath = (MKTileOverlayPath) {305, 489, 12, 1.0f};
 }

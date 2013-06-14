@@ -22,7 +22,7 @@
     return self;
 }
 
-#pragma mark - MKTileOverlay Override
+#pragma mark - MKTileOverlay Overrides
 
 - (void)loadTileAtPath:(MKTileOverlayPath)path result:(void (^)(NSData *, NSError *))result {
     if (result) {

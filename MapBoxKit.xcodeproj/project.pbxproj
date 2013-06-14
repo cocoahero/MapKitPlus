@@ -13,6 +13,7 @@
 		4E0C4069176B980700AF2737 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4068176B980700AF2737 /* libsqlite3.dylib */; };
 		4E0C406D176B989C00AF2737 /* MBKOfflineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */; };
 		4E0C4071176B98F900AF2737 /* MBKOfflineTileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4070176B98F900AF2737 /* MBKOfflineTileProvider.m */; };
+		4E0C4076176B9F4600AF2737 /* MBKOnlineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		4E0C406F176B98F900AF2737 /* MBKOfflineTileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOfflineTileProvider.h; sourceTree = "<group>"; };
 		4E0C4070176B98F900AF2737 /* MBKOfflineTileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOfflineTileProvider.m; sourceTree = "<group>"; };
 		4E0C4073176B9C2A00AF2737 /* MBKFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKFunctions.h; sourceTree = "<group>"; };
+		4E0C4074176B9F4600AF2737 /* MBKOnlineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOnlineTileOverlay.h; sourceTree = "<group>"; };
+		4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOnlineTileOverlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		4E0C406A176B986100AF2737 /* Tile Overlays */ = {
 			isa = PBXGroup;
 			children = (
+				4E0C4074176B9F4600AF2737 /* MBKOnlineTileOverlay.h */,
+				4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */,
 				4E0C406B176B989C00AF2737 /* MBKOfflineTileOverlay.h */,
 				4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */,
 			);
@@ -184,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0C4076176B9F4600AF2737 /* MBKOnlineTileOverlay.m in Sources */,
 				4E0C4071176B98F900AF2737 /* MBKOfflineTileProvider.m in Sources */,
 				4E0C406D176B989C00AF2737 /* MBKOfflineTileOverlay.m in Sources */,
 			);

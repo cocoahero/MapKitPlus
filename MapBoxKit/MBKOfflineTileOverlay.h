@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Jonathan Baker. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @class MBKOfflineTileProvider;
 

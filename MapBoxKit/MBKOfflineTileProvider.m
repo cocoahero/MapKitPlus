@@ -1,5 +1,5 @@
 //
-//  MBXOfflineTileProvider.m
+//  MBKOfflineTileProvider.m
 //  MapBoxKit
 //
 //  Created by Jonathan Baker on 6/14/13.

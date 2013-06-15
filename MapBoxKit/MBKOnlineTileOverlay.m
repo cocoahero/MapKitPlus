@@ -26,7 +26,7 @@ NSString * const MBKDefaultMapBoxBaseURL = @"api.tiles.mapbox.com";
 
 - (NSURL *)URLForTilePath:(MKTileOverlayPath)path {
     NSString *basePath = [self baseURLString];
-    NSString *formated = [NSString stringWithFormat:@"%@/%d/%d/%d.png", basePath, path.x, path.y, path.z];
+    NSString *formated = [NSString stringWithFormat:@"%@/%d/%d/%d.png", basePath, path.z, path.x, path.y];
     return [NSURL URLWithString:formated];
 }
 

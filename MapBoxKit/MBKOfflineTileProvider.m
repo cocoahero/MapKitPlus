@@ -131,7 +131,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     
     NSString *result = nil;
     
-    sqlite3_stmt *statement = [self metaStatement];
+    sqlite3_stmt *statement = [self metadataStatement];
     
     if (statement) {
         sqlite3_bind_text(statement, 1, [name UTF8String], -1, SQLITE_TRANSIENT);
@@ -170,7 +170,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
 
 #pragma mark - Prepared Statements
 
-- (sqlite3_stmt *)metaStatement {
+- (sqlite3_stmt *)metadataStatement {
     static NSString * query = @"SELECT value FROM metadata WHERE name = ?";
     
     if (!_metaStatement) {

@@ -43,7 +43,17 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
         return YES;
     }
     
-    int result = sqlite3_open(_path, &_database);
+    if (!_path) {
+        NSString *errorDesc = @"Unable to open MBTiles file. Path is undefined.";
+        *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:SQLITE_CANTOPEN userInfo: @{
+            NSLocalizedDescriptionKey: errorDesc
+        }];
+        return NO;
+    }
+    
+    int flags = SQLITE_READONLY | SQLITE_OPEN_FULLMUTEX;
+    
+    int result = sqlite3_open_v2(_path, &_database, flags, NULL);
     
     if (result != SQLITE_OK) {
         NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];

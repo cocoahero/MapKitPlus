@@ -44,10 +44,12 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     }
     
     if (!_path) {
-        NSString *errorDesc = @"Unable to open MBTiles file. Path is undefined.";
-        *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:SQLITE_CANTOPEN userInfo: @{
-            NSLocalizedDescriptionKey: errorDesc
-        }];
+        if (error != NULL) {
+            NSString *errorDesc = @"Unable to open MBTiles file. Path is undefined.";
+            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:SQLITE_CANTOPEN userInfo: @{
+                NSLocalizedDescriptionKey: errorDesc
+            }];
+        }
         return NO;
     }
     
@@ -56,10 +58,12 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     int result = sqlite3_open_v2(_path, &_database, flags, NULL);
     
     if (result != SQLITE_OK) {
-        NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
-        *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
-            NSLocalizedDescriptionKey: errorDesc
-        }];
+        if (error != NULL) {
+            NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
+            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
+                NSLocalizedDescriptionKey: errorDesc
+            }];
+        }
         return NO;
     }
     
@@ -84,10 +88,12 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDo
     int result = sqlite3_close(_database);
     
     if (result != SQLITE_OK) {
-        NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
-        *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
-            NSLocalizedDescriptionKey: errorDesc
-        }];
+        if (error != NULL) {
+            NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
+            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
+                NSLocalizedDescriptionKey: errorDesc
+            }];
+        }
         return NO;
     }
     

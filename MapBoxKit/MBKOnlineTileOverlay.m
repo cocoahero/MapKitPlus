@@ -8,7 +8,7 @@
 
 #import "MBKOnlineTileOverlay.h"
 
-NSString * const MBKDefaultMapBoxBaseURL = @"api.tiles.mapbox.com";
+NSString * const MBKDefaultMapBoxBaseURL = @"api.tiles.mapbox.com/v3";
 
 @implementation MBKOnlineTileOverlay
 

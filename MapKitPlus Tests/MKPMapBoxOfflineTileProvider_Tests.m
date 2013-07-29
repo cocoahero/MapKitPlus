@@ -1,5 +1,5 @@
 //
-//  MBKOfflineTileProvider_Tests.m
+//  MKPMapBoxOfflineTileProvider_Tests.m
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -9,18 +9,18 @@
 #import <XCTest/XCTest.h>
 #import "MapKitPlus.h"
 
-@interface MBKOfflineTileProvider_Tests : XCTestCase
+@interface MKPMapBoxOfflineTileProvider_Tests : XCTestCase
 
 @end
 
-@implementation MBKOfflineTileProvider_Tests
+@implementation MKPMapBoxOfflineTileProvider_Tests
 
 - (void)setUp {
     [super setUp];
 }
 
 - (void)testOpenDatabase {
-    MBKOfflineTileProvider *provider = [[MBKOfflineTileProvider alloc] initWithURL:nil];
+    MKPMapBoxOfflineTileProvider *provider = [[MKPMapBoxOfflineTileProvider alloc] initWithURL:nil];
     
     NSError *error = nil;
     [provider open:&error];

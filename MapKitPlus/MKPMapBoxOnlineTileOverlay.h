@@ -1,5 +1,5 @@
 //
-//  MBKOnlineTileOverlay.h
+//  MKPMapBoxOnlineTileOverlay.h
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -8,9 +8,9 @@
 
 #import <MapKit/MapKit.h>
 
-extern NSString * const MBKDefaultMapBoxBaseURL;
+extern NSString * const MKPMapBoxDefaultBaseURL;
 
-@interface MBKOnlineTileOverlay : MKTileOverlay
+@interface MKPMapBoxOnlineTileOverlay : MKTileOverlay
 
 /**
  * The MapBox hosted map identifier.

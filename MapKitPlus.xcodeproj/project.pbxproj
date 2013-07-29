@@ -11,14 +11,14 @@
 		4E0C4046176B972900AF2737 /* MapKitPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0C4045176B972900AF2737 /* MapKitPlus.h */; };
 		4E0C4067176B980100AF2737 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4066176B980100AF2737 /* MapKit.framework */; };
 		4E0C4069176B980700AF2737 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4068176B980700AF2737 /* libsqlite3.dylib */; };
-		4E0C406D176B989C00AF2737 /* MBKOfflineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */; };
-		4E0C4071176B98F900AF2737 /* MBKOfflineTileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4070176B98F900AF2737 /* MBKOfflineTileProvider.m */; };
-		4E0C4076176B9F4600AF2737 /* MBKOnlineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */; };
+		4E0C406D176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C406C176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m */; };
+		4E0C4071176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4070176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m */; };
+		4E0C4076176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */; };
 		4EB10A03176BB6A2001B977F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C404E176B972900AF2737 /* XCTest.framework */; };
 		4EB10A04176BB6A2001B977F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4040176B972900AF2737 /* Foundation.framework */; };
-		4EB10A0D176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */; };
+		4EB10A0D176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A0C176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m */; };
 		4EB10A14176BB741001B977F /* libMapKitPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C403D176B972900AF2737 /* libMapKitPlus.a */; };
-		4EB10A16176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */; };
+		4EB10A16176BC3F0001B977F /* MKPMapBoxOfflineTileProvider_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A15176BC3F0001B977F /* MKPMapBoxOfflineTileProvider_Tests.m */; };
 		4EB10A17176BC4F2001B977F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4068176B980700AF2737 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
@@ -44,18 +44,18 @@
 		4E0C4051176B972900AF2737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E0C4066176B980100AF2737 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4E0C4068176B980700AF2737 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		4E0C406B176B989C00AF2737 /* MBKOfflineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOfflineTileOverlay.h; sourceTree = "<group>"; };
-		4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOfflineTileOverlay.m; sourceTree = "<group>"; };
-		4E0C406F176B98F900AF2737 /* MBKOfflineTileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOfflineTileProvider.h; sourceTree = "<group>"; };
-		4E0C4070176B98F900AF2737 /* MBKOfflineTileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOfflineTileProvider.m; sourceTree = "<group>"; };
-		4E0C4073176B9C2A00AF2737 /* MBKFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKFunctions.h; sourceTree = "<group>"; };
-		4E0C4074176B9F4600AF2737 /* MBKOnlineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOnlineTileOverlay.h; sourceTree = "<group>"; };
-		4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOnlineTileOverlay.m; sourceTree = "<group>"; };
+		4E0C406B176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPMapBoxOfflineTileOverlay.h; sourceTree = "<group>"; };
+		4E0C406C176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOfflineTileOverlay.m; sourceTree = "<group>"; };
+		4E0C406F176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPMapBoxOfflineTileProvider.h; sourceTree = "<group>"; };
+		4E0C4070176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOfflineTileProvider.m; sourceTree = "<group>"; };
+		4E0C4073176B9C2A00AF2737 /* MKPFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPFunctions.h; sourceTree = "<group>"; };
+		4E0C4074176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPMapBoxOnlineTileOverlay.h; sourceTree = "<group>"; };
+		4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOnlineTileOverlay.m; sourceTree = "<group>"; };
 		4EB10A02176BB6A1001B977F /* MapKitPlus Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MapKitPlus Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB10A08176BB6A2001B977F /* MapKitPlus Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitPlus Tests-Info.plist"; sourceTree = "<group>"; };
-		4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBKOnlineTileOverlay_Tests.m; sourceTree = "<group>"; };
+		4EB10A0C176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOnlineTileOverlay_Tests.m; sourceTree = "<group>"; };
 		4EB10A0E176BB6A2001B977F /* MapKitPlus Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKitPlus Tests-Prefix.pch"; sourceTree = "<group>"; };
-		4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOfflineTileProvider_Tests.m; sourceTree = "<group>"; };
+		4EB10A15176BC3F0001B977F /* MKPMapBoxOfflineTileProvider_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOfflineTileProvider_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +137,10 @@
 		4E0C406A176B986100AF2737 /* Tile Overlays */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C4074176B9F4600AF2737 /* MBKOnlineTileOverlay.h */,
-				4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */,
-				4E0C406B176B989C00AF2737 /* MBKOfflineTileOverlay.h */,
-				4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */,
+				4E0C4074176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.h */,
+				4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */,
+				4E0C406B176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.h */,
+				4E0C406C176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m */,
 			);
 			name = "Tile Overlays";
 			sourceTree = "<group>";
@@ -148,8 +148,8 @@
 		4E0C406E176B98E100AF2737 /* Tile Providers */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C406F176B98F900AF2737 /* MBKOfflineTileProvider.h */,
-				4E0C4070176B98F900AF2737 /* MBKOfflineTileProvider.m */,
+				4E0C406F176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.h */,
+				4E0C4070176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m */,
 			);
 			name = "Tile Providers";
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 		4E0C4072176B9C1500AF2737 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C4073176B9C2A00AF2737 /* MBKFunctions.h */,
+				4E0C4073176B9C2A00AF2737 /* MKPFunctions.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		4EB10A06176BB6A2001B977F /* MapKitPlus Tests */ = {
 			isa = PBXGroup;
 			children = (
-				4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */,
-				4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */,
+				4EB10A0C176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m */,
+				4EB10A15176BC3F0001B977F /* MKPMapBoxOfflineTileProvider_Tests.m */,
 				4EB10A07176BB6A2001B977F /* Supporting Files */,
 			);
 			path = "MapKitPlus Tests";
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0C4076176B9F4600AF2737 /* MBKOnlineTileOverlay.m in Sources */,
-				4E0C4071176B98F900AF2737 /* MBKOfflineTileProvider.m in Sources */,
-				4E0C406D176B989C00AF2737 /* MBKOfflineTileOverlay.m in Sources */,
+				4E0C4076176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m in Sources */,
+				4E0C4071176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m in Sources */,
+				4E0C406D176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB10A0D176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m in Sources */,
-				4EB10A16176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m in Sources */,
+				4EB10A0D176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m in Sources */,
+				4EB10A16176BC3F0001B977F /* MKPMapBoxOfflineTileProvider_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

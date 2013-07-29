@@ -1,5 +1,5 @@
 //
-//  MapBoxKit_Tests.m
+//  MKPMapBoxOnlineTileOverlay_Tests.m
 //  MapKitPlus Tests
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -9,19 +9,19 @@
 #import <XCTest/XCTest.h>
 #import "MapKitPlus.h"
 
-@interface MBKOnlineTileOverlay_Tests : XCTestCase
+@interface MKPMapBoxOnlineTileOverlay_Tests : XCTestCase
 
-@property (nonatomic, strong) MBKOnlineTileOverlay *overlay;
+@property (nonatomic, strong) MKPMapBoxOnlineTileOverlay *overlay;
 
 @property (nonatomic, assign) MKTileOverlayPath overlayPath;
 
 @end
 
-@implementation MBKOnlineTileOverlay_Tests
+@implementation MKPMapBoxOnlineTileOverlay_Tests
 
 - (void)setUp {
     [super setUp];
-    self.overlay = [[MBKOnlineTileOverlay alloc] initWithMapIdentifier:@"account.identifier"];
+    self.overlay = [[MKPMapBoxOnlineTileOverlay alloc] initWithMapIdentifier:@"account.identifier"];
     self.overlayPath = (MKTileOverlayPath) {305, 489, 12, 1.0f};
 }
 

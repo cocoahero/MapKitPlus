@@ -11,6 +11,6 @@
 #import <Foundation/Foundation.h>
 
 // Library Headers
-#import "MBKOnlineTileOverlay.h"
-#import "MBKOfflineTileOverlay.h"
-#import "MBKOfflineTileProvider.h"
+#import "MKPMapBoxOnlineTileOverlay.h"
+#import "MKPMapBoxOfflineTileOverlay.h"
+#import "MKPMapBoxOfflineTileProvider.h"

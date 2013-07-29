@@ -1,5 +1,5 @@
 //
-//  MBKOfflineTileOverlay.h
+//  MKPMapBoxOfflineTileOverlay.h
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -8,14 +8,14 @@
 
 #import <MapKit/MapKit.h>
 
-@class MBKOfflineTileProvider;
+@class MKPMapBoxOfflineTileProvider;
 
-@interface MBKOfflineTileOverlay : MKTileOverlay
+@interface MKPMapBoxOfflineTileOverlay : MKTileOverlay
 
 /**
  * The MBKOfflineTileProvider instance that will be providing the tiles.
  */
-@property (nonatomic, strong) MBKOfflineTileProvider *provider;
+@property (nonatomic, strong) MKPMapBoxOfflineTileProvider *provider;
 
 /**
  * Initializes and returns a new tile overlay configured to use the given
@@ -24,6 +24,6 @@
  * \returns Returns an initialized MBKOfflineTileOverlay object or nil if the
  * object could not be successfully initialized.
  */
-- (id)initWithTileProvider:(MBKOfflineTileProvider *)provider;
+- (id)initWithTileProvider:(MKPMapBoxOfflineTileProvider *)provider;
 
 @end

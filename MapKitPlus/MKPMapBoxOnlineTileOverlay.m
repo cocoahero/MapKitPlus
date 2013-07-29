@@ -1,16 +1,16 @@
 //
-//  MBKOnlineTileOverlay.m
+//  MKPMapBoxOnlineTileOverlay.m
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
 //  Copyright (c) 2013 Jonathan Baker. All rights reserved.
 //
 
-#import "MBKOnlineTileOverlay.h"
+#import "MKPMapBoxOnlineTileOverlay.h"
 
-NSString * const MBKDefaultMapBoxBaseURL = @"api.tiles.mapbox.com/v3";
+NSString * const MKPMapBoxDefaultBaseURL = @"api.tiles.mapbox.com/v3";
 
-@implementation MBKOnlineTileOverlay
+@implementation MKPMapBoxOnlineTileOverlay
 
 #pragma mark - Initializers
 
@@ -34,7 +34,7 @@ NSString * const MBKDefaultMapBoxBaseURL = @"api.tiles.mapbox.com/v3";
 
 - (NSString *)baseURLString {
     NSString *protocol = self.useSecureTransport ? @"https://" : @"http://";
-    return [NSString stringWithFormat:@"%@%@/%@", protocol, MBKDefaultMapBoxBaseURL, self.mapIdentifier];
+    return [NSString stringWithFormat:@"%@%@/%@", protocol, MKPMapBoxDefaultBaseURL, self.mapIdentifier];
 }
 
 @end

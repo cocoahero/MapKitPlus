@@ -1,20 +1,20 @@
 //
-//  MBKOfflineTileOverlay.m
+//  MKPMapBoxOfflineTileOverlay.m
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
 //  Copyright (c) 2013 Jonathan Baker. All rights reserved.
 //
 
-#import "MBKFunctions.h"
-#import "MBKOfflineTileOverlay.h"
-#import "MBKOfflineTileProvider.h"
+#import "MKPFunctions.h"
+#import "MKPMapBoxOfflineTileOverlay.h"
+#import "MKPMapBoxOfflineTileProvider.h"
 
-@implementation MBKOfflineTileOverlay
+@implementation MKPMapBoxOfflineTileOverlay
 
 #pragma mark - Initializer
 
-- (id)initWithTileProvider:(MBKOfflineTileProvider *)provider {
+- (id)initWithTileProvider:(MKPMapBoxOfflineTileProvider *)provider {
     if ((self = [super init])) {
         self.provider = provider;
         self.geometryFlipped = YES;
@@ -40,11 +40,11 @@
 
 #pragma mark - Properties
 
-- (void)setProvider:(MBKOfflineTileProvider *)provider {
+- (void)setProvider:(MKPMapBoxOfflineTileProvider *)provider {
     if (_provider) {
         NSError *error = nil;
         if (![_provider close:&error]) {
-            MBKLog(@"Error Closing Existing Provider: %@", error);
+            MKPLog(@"Error Closing Existing Provider: %@", error);
         }
     }
     _provider = provider;

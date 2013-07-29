@@ -1,5 +1,5 @@
 //
-//  MBKOfflineTileProvider.m
+//  MKPMapBoxOfflineTileProvider.m
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -7,12 +7,12 @@
 //
 
 #import <sqlite3.h>
-#import "MBKFunctions.h"
-#import "MBKOfflineTileProvider.h"
+#import "MKPFunctions.h"
+#import "MKPMapBoxOfflineTileProvider.h"
 
-NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorDomain";
+NSString * const MKPSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorDomain";
 
-@implementation MBKOfflineTileProvider {
+@implementation MKPMapBoxOfflineTileProvider {
     int _minimumZoom;
     int _maximumZoom;
     const char * _path;
@@ -46,7 +46,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorD
     if (!_path) {
         if (error != NULL) {
             NSString *errorDesc = @"Unable to open MBTiles file. Path is undefined.";
-            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:SQLITE_CANTOPEN userInfo: @{
+            *error = [NSError errorWithDomain:MKPSQLiteErrorDomain code:SQLITE_CANTOPEN userInfo: @{
                 NSLocalizedDescriptionKey: errorDesc
             }];
         }
@@ -60,7 +60,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorD
     if (result != SQLITE_OK) {
         if (error != NULL) {
             NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
-            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
+            *error = [NSError errorWithDomain:MKPSQLiteErrorDomain code:result userInfo: @{
                 NSLocalizedDescriptionKey: errorDesc
             }];
         }
@@ -90,7 +90,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorD
     if (result != SQLITE_OK) {
         if (error != NULL) {
             NSString *errorDesc = [NSString stringWithUTF8String:sqlite3_errmsg(_database)];
-            *error = [NSError errorWithDomain:MBKSQLiteErrorDomain code:result userInfo: @{
+            *error = [NSError errorWithDomain:MKPSQLiteErrorDomain code:result userInfo: @{
                 NSLocalizedDescriptionKey: errorDesc
             }];
         }
@@ -211,7 +211,7 @@ NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorD
 - (void)dealloc {
     NSError *error = nil;
     if (![self close:&error]) {
-        MBKLog(@"Error Closing SQLite Database Handle: %@", error);
+        MKPLog(@"Error Closing SQLite Database Handle: %@", error);
     }
 }
 

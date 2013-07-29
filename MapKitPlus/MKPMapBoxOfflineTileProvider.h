@@ -1,5 +1,5 @@
 //
-//  MBKOfflineTileProvider.h
+//  MKPMapBoxOfflineTileProvider.h
 //  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * const MBKSQLiteErrorDomain;
+extern NSString * const MKPSQLiteErrorDomain;
 
-@interface MBKOfflineTileProvider : NSObject
+@interface MKPMapBoxOfflineTileProvider : NSObject
 
 - (id)initWithURL:(NSURL *)url;
 

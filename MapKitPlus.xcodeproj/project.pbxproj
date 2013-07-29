@@ -14,6 +14,7 @@
 		4E0C406D176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C406C176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m */; };
 		4E0C4071176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4070176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m */; };
 		4E0C4076176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */; };
+		4E590D0E17A607A700527D52 /* MKPOpenStreetMapTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E590D0D17A607A700527D52 /* MKPOpenStreetMapTileOverlay.m */; };
 		4EB10A03176BB6A2001B977F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C404E176B972900AF2737 /* XCTest.framework */; };
 		4EB10A04176BB6A2001B977F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4040176B972900AF2737 /* Foundation.framework */; };
 		4EB10A0D176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A0C176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m */; };
@@ -50,6 +51,8 @@
 		4E0C4073176B9C2A00AF2737 /* MKPFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPFunctions.h; sourceTree = "<group>"; };
 		4E0C4074176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPMapBoxOnlineTileOverlay.h; sourceTree = "<group>"; };
 		4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOnlineTileOverlay.m; sourceTree = "<group>"; };
+		4E590D0C17A607A700527D52 /* MKPOpenStreetMapTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPOpenStreetMapTileOverlay.h; sourceTree = "<group>"; };
+		4E590D0D17A607A700527D52 /* MKPOpenStreetMapTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPOpenStreetMapTileOverlay.m; sourceTree = "<group>"; };
 		4EB10A02176BB6A1001B977F /* MapKitPlus Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MapKitPlus Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB10A08176BB6A2001B977F /* MapKitPlus Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitPlus Tests-Info.plist"; sourceTree = "<group>"; };
 		4EB10A0C176BB6A2001B977F /* MKPMapBoxOnlineTileOverlay_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPMapBoxOnlineTileOverlay_Tests.m; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				4E0C4075176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m */,
 				4E0C406B176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.h */,
 				4E0C406C176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m */,
+				4E590D0C17A607A700527D52 /* MKPOpenStreetMapTileOverlay.h */,
+				4E590D0D17A607A700527D52 /* MKPOpenStreetMapTileOverlay.m */,
 			);
 			name = "Tile Overlays";
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				4E0C4076176B9F4600AF2737 /* MKPMapBoxOnlineTileOverlay.m in Sources */,
 				4E0C4071176B98F900AF2737 /* MKPMapBoxOfflineTileProvider.m in Sources */,
 				4E0C406D176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.m in Sources */,
+				4E590D0E17A607A700527D52 /* MKPOpenStreetMapTileOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

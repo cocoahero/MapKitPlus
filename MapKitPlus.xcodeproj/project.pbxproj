@@ -41,7 +41,6 @@
 		4E0C4044176B972900AF2737 /* MapKitPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKitPlus-Prefix.pch"; sourceTree = "<group>"; };
 		4E0C4045176B972900AF2737 /* MapKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapKitPlus.h; sourceTree = "<group>"; };
 		4E0C404E176B972900AF2737 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4E0C4051176B972900AF2737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E0C4066176B980100AF2737 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4E0C4068176B980700AF2737 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4E0C406B176B989C00AF2737 /* MKPMapBoxOfflineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPMapBoxOfflineTileOverlay.h; sourceTree = "<group>"; };
@@ -109,7 +108,6 @@
 				4E0C4066176B980100AF2737 /* MapKit.framework */,
 				4E0C4040176B972900AF2737 /* Foundation.framework */,
 				4E0C404E176B972900AF2737 /* XCTest.framework */,
-				4E0C4051176B972900AF2737 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

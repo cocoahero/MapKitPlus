@@ -1,6 +1,6 @@
 //
 //  MBKOfflineTileProvider.m
-//  MapBoxKit
+//  MapKitPlus
 //
 //  Created by Jonathan Baker on 6/14/13.
 //  Copyright (c) 2013 Jonathan Baker. All rights reserved.
@@ -10,7 +10,7 @@
 #import "MBKFunctions.h"
 #import "MBKOfflineTileProvider.h"
 
-NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.mapboxkit.sqlite.ErrorDomain";
+NSString * const MBKSQLiteErrorDomain = @"com.cocoahero.MapKitPlus.sqlite.ErrorDomain";
 
 @implementation MBKOfflineTileProvider {
     int _minimumZoom;

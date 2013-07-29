@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E0C4041176B972900AF2737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4040176B972900AF2737 /* Foundation.framework */; };
-		4E0C4046176B972900AF2737 /* MapBoxKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0C4045176B972900AF2737 /* MapBoxKit.h */; };
+		4E0C4046176B972900AF2737 /* MapKitPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0C4045176B972900AF2737 /* MapKitPlus.h */; };
 		4E0C4067176B980100AF2737 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4066176B980100AF2737 /* MapKit.framework */; };
 		4E0C4069176B980700AF2737 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4068176B980700AF2737 /* libsqlite3.dylib */; };
 		4E0C406D176B989C00AF2737 /* MBKOfflineTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C406C176B989C00AF2737 /* MBKOfflineTileOverlay.m */; };
@@ -17,7 +17,7 @@
 		4EB10A03176BB6A2001B977F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C404E176B972900AF2737 /* XCTest.framework */; };
 		4EB10A04176BB6A2001B977F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4040176B972900AF2737 /* Foundation.framework */; };
 		4EB10A0D176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */; };
-		4EB10A14176BB741001B977F /* libMapBoxKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C403D176B972900AF2737 /* libMapBoxKit.a */; };
+		4EB10A14176BB741001B977F /* libMapKitPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C403D176B972900AF2737 /* libMapKitPlus.a */; };
 		4EB10A16176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */; };
 		4EB10A17176BC4F2001B977F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4068176B980700AF2737 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -29,17 +29,17 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4E0C4046176B972900AF2737 /* MapBoxKit.h in CopyFiles */,
+				4E0C4046176B972900AF2737 /* MapKitPlus.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E0C403D176B972900AF2737 /* libMapBoxKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMapBoxKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0C403D176B972900AF2737 /* libMapKitPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMapKitPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0C4040176B972900AF2737 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4E0C4044176B972900AF2737 /* MapBoxKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapBoxKit-Prefix.pch"; sourceTree = "<group>"; };
-		4E0C4045176B972900AF2737 /* MapBoxKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapBoxKit.h; sourceTree = "<group>"; };
+		4E0C4044176B972900AF2737 /* MapKitPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKitPlus-Prefix.pch"; sourceTree = "<group>"; };
+		4E0C4045176B972900AF2737 /* MapKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapKitPlus.h; sourceTree = "<group>"; };
 		4E0C404E176B972900AF2737 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4E0C4051176B972900AF2737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E0C4066176B980100AF2737 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -51,10 +51,10 @@
 		4E0C4073176B9C2A00AF2737 /* MBKFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKFunctions.h; sourceTree = "<group>"; };
 		4E0C4074176B9F4600AF2737 /* MBKOnlineTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBKOnlineTileOverlay.h; sourceTree = "<group>"; };
 		4E0C4075176B9F4600AF2737 /* MBKOnlineTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOnlineTileOverlay.m; sourceTree = "<group>"; };
-		4EB10A02176BB6A1001B977F /* MapBoxKit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MapBoxKit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB10A08176BB6A2001B977F /* MapBoxKit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapBoxKit Tests-Info.plist"; sourceTree = "<group>"; };
+		4EB10A02176BB6A1001B977F /* MapKitPlus Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MapKitPlus Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB10A08176BB6A2001B977F /* MapKitPlus Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitPlus Tests-Info.plist"; sourceTree = "<group>"; };
 		4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBKOnlineTileOverlay_Tests.m; sourceTree = "<group>"; };
-		4EB10A0E176BB6A2001B977F /* MapBoxKit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapBoxKit Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4EB10A0E176BB6A2001B977F /* MapKitPlus Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKitPlus Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBKOfflineTileProvider_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB10A17176BC4F2001B977F /* libsqlite3.dylib in Frameworks */,
-				4EB10A14176BB741001B977F /* libMapBoxKit.a in Frameworks */,
+				4EB10A14176BB741001B977F /* libMapKitPlus.a in Frameworks */,
 				4EB10A03176BB6A2001B977F /* XCTest.framework in Frameworks */,
 				4EB10A04176BB6A2001B977F /* Foundation.framework in Frameworks */,
 			);
@@ -86,7 +86,7 @@
 		4E0C4034176B972900AF2737 = {
 			isa = PBXGroup;
 			children = (
-				4E0C4042176B972900AF2737 /* MapBoxKit */,
+				4E0C4042176B972900AF2737 /* MapKitPlus */,
 				4EB10A06176BB6A2001B977F /* MapBoxKit Tests */,
 				4E0C403F176B972900AF2737 /* Frameworks */,
 				4E0C403E176B972900AF2737 /* Products */,
@@ -96,8 +96,8 @@
 		4E0C403E176B972900AF2737 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C403D176B972900AF2737 /* libMapBoxKit.a */,
-				4EB10A02176BB6A1001B977F /* MapBoxKit Tests.xctest */,
+				4E0C403D176B972900AF2737 /* libMapKitPlus.a */,
+				4EB10A02176BB6A1001B977F /* MapKitPlus Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,22 +114,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4E0C4042176B972900AF2737 /* MapBoxKit */ = {
+		4E0C4042176B972900AF2737 /* MapKitPlus */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C4045176B972900AF2737 /* MapBoxKit.h */,
+				4E0C4045176B972900AF2737 /* MapKitPlus.h */,
 				4E0C406A176B986100AF2737 /* Tile Overlays */,
 				4E0C406E176B98E100AF2737 /* Tile Providers */,
 				4E0C4072176B9C1500AF2737 /* Utilities */,
 				4E0C4043176B972900AF2737 /* Supporting Files */,
 			);
-			path = MapBoxKit;
+			path = MapKitPlus;
 			sourceTree = "<group>";
 		};
 		4E0C4043176B972900AF2737 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E0C4044176B972900AF2737 /* MapBoxKit-Prefix.pch */,
+				4E0C4044176B972900AF2737 /* MapKitPlus-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,14 +169,15 @@
 				4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */,
 				4EB10A07176BB6A2001B977F /* Supporting Files */,
 			);
-			path = "MapBoxKit Tests";
+			name = "MapBoxKit Tests";
+			path = "MapKitPlus Tests";
 			sourceTree = "<group>";
 		};
 		4EB10A07176BB6A2001B977F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EB10A08176BB6A2001B977F /* MapBoxKit Tests-Info.plist */,
-				4EB10A0E176BB6A2001B977F /* MapBoxKit Tests-Prefix.pch */,
+				4EB10A08176BB6A2001B977F /* MapKitPlus Tests-Info.plist */,
+				4EB10A0E176BB6A2001B977F /* MapKitPlus Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E0C403C176B972900AF2737 /* MapBoxKit */ = {
+		4E0C403C176B972900AF2737 /* MapKitPlus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E0C4060176B972900AF2737 /* Build configuration list for PBXNativeTarget "MapBoxKit" */;
+			buildConfigurationList = 4E0C4060176B972900AF2737 /* Build configuration list for PBXNativeTarget "MapKitPlus" */;
 			buildPhases = (
 				4E0C4039176B972900AF2737 /* Sources */,
 				4E0C403A176B972900AF2737 /* Frameworks */,
@@ -196,14 +197,14 @@
 			);
 			dependencies = (
 			);
-			name = MapBoxKit;
+			name = MapKitPlus;
 			productName = MapBoxKit;
-			productReference = 4E0C403D176B972900AF2737 /* libMapBoxKit.a */;
+			productReference = 4E0C403D176B972900AF2737 /* libMapKitPlus.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4EB10A01176BB6A1001B977F /* MapBoxKit Tests */ = {
+		4EB10A01176BB6A1001B977F /* MapKitPlus Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB10A13176BB6A2001B977F /* Build configuration list for PBXNativeTarget "MapBoxKit Tests" */;
+			buildConfigurationList = 4EB10A13176BB6A2001B977F /* Build configuration list for PBXNativeTarget "MapKitPlus Tests" */;
 			buildPhases = (
 				4EB109FE176BB6A1001B977F /* Sources */,
 				4EB109FF176BB6A1001B977F /* Frameworks */,
@@ -213,9 +214,9 @@
 			);
 			dependencies = (
 			);
-			name = "MapBoxKit Tests";
+			name = "MapKitPlus Tests";
 			productName = "MapBoxKit Tests";
-			productReference = 4EB10A02176BB6A1001B977F /* MapBoxKit Tests.xctest */;
+			productReference = 4EB10A02176BB6A1001B977F /* MapKitPlus Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -224,6 +225,7 @@
 		4E0C4035176B972900AF2737 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MKP;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jonathan Baker";
 				TargetAttributes = {
@@ -232,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E0C4038176B972900AF2737 /* Build configuration list for PBXProject "MapBoxKit" */;
+			buildConfigurationList = 4E0C4038176B972900AF2737 /* Build configuration list for PBXProject "MapKitPlus" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E0C403C176B972900AF2737 /* MapBoxKit */,
-				4EB10A01176BB6A1001B977F /* MapBoxKit Tests */,
+				4E0C403C176B972900AF2737 /* MapKitPlus */,
+				4EB10A01176BB6A1001B977F /* MapKitPlus Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,11 +354,11 @@
 		4E0C4061176B972900AF2737 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/MapBoxKit.dst;
+				DSTROOT = /tmp/MapKitPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MapBoxKit/MapBoxKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "MapKitPlus/MapKitPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MapKitPlus;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -364,11 +366,11 @@
 		4E0C4062176B972900AF2737 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/MapBoxKit.dst;
+				DSTROOT = /tmp/MapKitPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MapBoxKit/MapBoxKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "MapKitPlus/MapKitPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MapKitPlus;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -382,13 +384,13 @@
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MapBoxKit Tests/MapBoxKit Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "MapKitPlus Tests/MapKitPlus Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MapBoxKit Tests/MapBoxKit Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MapKitPlus Tests/MapKitPlus Tests-Info.plist";
+				PRODUCT_NAME = "MapKitPlus Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -402,9 +404,9 @@
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MapBoxKit Tests/MapBoxKit Tests-Prefix.pch";
-				INFOPLIST_FILE = "MapBoxKit Tests/MapBoxKit Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MapKitPlus Tests/MapKitPlus Tests-Prefix.pch";
+				INFOPLIST_FILE = "MapKitPlus Tests/MapKitPlus Tests-Info.plist";
+				PRODUCT_NAME = "MapKitPlus Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -412,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E0C4038176B972900AF2737 /* Build configuration list for PBXProject "MapBoxKit" */ = {
+		4E0C4038176B972900AF2737 /* Build configuration list for PBXProject "MapKitPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E0C405E176B972900AF2737 /* Debug */,
@@ -421,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E0C4060176B972900AF2737 /* Build configuration list for PBXNativeTarget "MapBoxKit" */ = {
+		4E0C4060176B972900AF2737 /* Build configuration list for PBXNativeTarget "MapKitPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E0C4061176B972900AF2737 /* Debug */,
@@ -430,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EB10A13176BB6A2001B977F /* Build configuration list for PBXNativeTarget "MapBoxKit Tests" */ = {
+		4EB10A13176BB6A2001B977F /* Build configuration list for PBXNativeTarget "MapKitPlus Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB10A11176BB6A2001B977F /* Debug */,

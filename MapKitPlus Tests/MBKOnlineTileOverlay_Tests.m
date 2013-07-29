@@ -1,13 +1,13 @@
 //
 //  MapBoxKit_Tests.m
-//  MapBoxKit Tests
+//  MapKitPlus Tests
 //
 //  Created by Jonathan Baker on 6/14/13.
 //  Copyright (c) 2013 Jonathan Baker. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "MapBoxKit.h"
+#import "MapKitPlus.h"
 
 @interface MBKOnlineTileOverlay_Tests : XCTestCase
 

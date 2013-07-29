@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				4E0C4042176B972900AF2737 /* MapKitPlus */,
-				4EB10A06176BB6A2001B977F /* MapBoxKit Tests */,
+				4EB10A06176BB6A2001B977F /* MapKitPlus Tests */,
 				4E0C403F176B972900AF2737 /* Frameworks */,
 				4E0C403E176B972900AF2737 /* Products */,
 			);
@@ -162,14 +162,13 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
-		4EB10A06176BB6A2001B977F /* MapBoxKit Tests */ = {
+		4EB10A06176BB6A2001B977F /* MapKitPlus Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4EB10A0C176BB6A2001B977F /* MBKOnlineTileOverlay_Tests.m */,
 				4EB10A15176BC3F0001B977F /* MBKOfflineTileProvider_Tests.m */,
 				4EB10A07176BB6A2001B977F /* Supporting Files */,
 			);
-			name = "MapBoxKit Tests";
 			path = "MapKitPlus Tests";
 			sourceTree = "<group>";
 		};

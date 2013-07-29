@@ -28,7 +28,7 @@
 - (void)testURLForTilePath {    
     NSURL *url = [self.overlay URLForTilePath:self.overlayPath];
     
-    NSString *expected = @"/account.identifier/305/489/12.png";
+    NSString *expected = @"/v3/account.identifier/12/305/489.png";
     
     XCTAssertEqualObjects([url path], expected, @"Resultant path should match identifier and coordinates.");
 }

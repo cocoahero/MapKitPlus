@@ -12,4 +12,23 @@
 // Macros
 #define MKPLog(fmt, args...) NSLog(@"[MapKitPlus] " fmt, ##args)
 
+//
+// Functions
+//
+
+/**
+ Creates a CLLocationCoordinate2D given an NSArray.
+ \param array An NSArray instance in the format of [lon, lat].
+ \returns Returns a CLLocationCoorindate2D or kCLLocationCoordinate2DInvalid if the
+ array was of invalid format.
+ */
+CLLocationCoordinate2D MKP_CLLocationCoordinate2DMakeWithArray(NSArray *array) {
+    if (array && array.count == 2) {
+        double lon = [array[0] doubleValue];
+        double lat = [array[1] doubleValue];
+        return CLLocationCoordinate2DMake(lat, lon);
+    }
+    return kCLLocationCoordinate2DInvalid;
+}
+
 #endif

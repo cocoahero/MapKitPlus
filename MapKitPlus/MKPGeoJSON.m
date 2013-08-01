@@ -94,7 +94,7 @@ NSString * const MKPGeoJSONTypeFeatureCollection = @"FeatureCollection";
     }
     
     if ([MKPGeoJSONTypeFeatureCollection isEqualToString:type]) {
-        return nil;
+        return [MKPGeoJSONFeatureCollection featureCollectionWithAttributes:attributes];
     }
     
     if ([MKPGeoJSONTypeGeometryCollection isEqualToString:type]) {

@@ -63,3 +63,4 @@ extern NSString * const MKPGeoJSONTypeGeometryCollection;
 
 #import "MKPGeoJSONPoint.h"
 #import "MKPGeoJSONFeature.h"
+#import "MKPGeoJSONFeatureCollection.h"

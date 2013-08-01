@@ -34,12 +34,31 @@ extern NSString * const MKPGeoJSONTypeMultiLineString;
 extern NSString * const MKPGeoJSONTypeFeatureCollection;
 extern NSString * const MKPGeoJSONTypeGeometryCollection;
 
-@interface MKPGeoJSON : NSObject
+/**
+ Abstract parent class of all GeoJSON object subtypes. You should not create an instance of this class directly.
+ Instead, use [MKPGeoJSON GeoJSONObjectWithAttributes: error:] to get a properly cast instance that represents
+ a particular type of GeoJSON object.
+ */
+@interface MKPGeoJSONObject : NSObject
 
-+ (id)GeoJSONObjectWithData:(NSData *)data error:(NSError **)error;
+@property (nonatomic, strong) NSString *type;
 
-+ (id)GeoJSONObjectWithStream:(NSInputStream *)stream error:(NSError **)error;
-
-+ (id)GeoJSONObjectWithAttributes:(NSDictionary *)dictionary error:(NSError **)error;
+- (id)initWithAttributes:(NSDictionary *)attributes;
 
 @end
+
+/**
+ You can use the MKPGeoJSON class to parse GeoJSON structured JSON into 
+ subclasses of MKPGeoJSONObject that represent each possible type.
+ */
+@interface MKPGeoJSON : NSObject
+
++ (MKPGeoJSONObject *)GeoJSONObjectWithData:(NSData *)data error:(NSError **)error;
+
++ (MKPGeoJSONObject *)GeoJSONObjectWithStream:(NSInputStream *)stream error:(NSError **)error;
+
++ (MKPGeoJSONObject *)GeoJSONObjectWithAttributes:(NSDictionary *)attributes error:(NSError **)error;
+
+@end
+
+#import "MKPGeoJSONPoint.h"

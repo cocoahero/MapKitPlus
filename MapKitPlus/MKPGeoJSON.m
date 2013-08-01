@@ -20,6 +20,19 @@ NSString * const MKPGeoJSONTypeGeometryCollection = @"GeometryCollection";
 NSString * const MKPGeoJSONTypeFeature = @"Feature";
 NSString * const MKPGeoJSONTypeFeatureCollection = @"FeatureCollection";
 
+@implementation MKPGeoJSONObject
+
+#pragma mark - Initalizer
+
+- (id)initWithAttributes:(NSDictionary *)attributes {
+    if ((self = [super init])) {
+        self.type = attributes[@"type"];
+    }
+    return self;
+}
+
+@end
+
 @implementation MKPGeoJSON
 
 + (id)GeoJSONObjectWithData:(NSData *)data error:(NSError *__autoreleasing *)error {
@@ -44,8 +57,8 @@ NSString * const MKPGeoJSONTypeFeatureCollection = @"FeatureCollection";
     return nil;
 }
 
-+ (id)GeoJSONObjectWithAttributes:(NSDictionary *)dictionary error:(NSError *__autoreleasing *)error {
-    NSString *type = dictionary[@"type"];
++ (id)GeoJSONObjectWithAttributes:(NSDictionary *)attributes error:(NSError *__autoreleasing *)error {
+    NSString *type = attributes[@"type"];
     
     if (!type || !type.length) {
         *error = [self errorForInvalidSchema];
@@ -53,7 +66,7 @@ NSString * const MKPGeoJSONTypeFeatureCollection = @"FeatureCollection";
     }
     
     if ([MKPGeoJSONTypePoint isEqualToString:type]) {
-        return nil;
+        return [MKPGeoJSONPoint pointWithAttributes:attributes];
     }
     
     if ([MKPGeoJSONTypePolygon isEqualToString:type]) {

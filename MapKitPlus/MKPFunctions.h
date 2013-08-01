@@ -9,12 +9,7 @@
 #ifndef MapKitPlus_MKPFunctions_h
 #define MapKitPlus_MKPFunctions_h
 
-// Macros
 #define MKPLog(fmt, args...) NSLog(@"[MapKitPlus] " fmt, ##args)
-
-//
-// Functions
-//
 
 /**
  Creates a CLLocationCoordinate2D given an NSArray.

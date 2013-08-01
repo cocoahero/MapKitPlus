@@ -74,7 +74,7 @@ NSString * const MKPGeoJSONTypeFeatureCollection = @"FeatureCollection";
     }
     
     if ([MKPGeoJSONTypeFeature isEqualToString:type]) {
-        return nil;
+        return [MKPGeoJSONFeature featureWithAttributes:attributes];
     }
     
     if ([MKPGeoJSONTypeMultiPoint isEqualToString:type]) {

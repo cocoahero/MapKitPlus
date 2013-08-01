@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 
 // Library Headers
+#import "MKPGeoJSON.h"
 #import "MKPMapBoxOnlineTileOverlay.h"
 #import "MKPMapBoxOfflineTileOverlay.h"
 #import "MKPMapBoxOfflineTileProvider.h"
